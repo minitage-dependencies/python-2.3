@@ -42,14 +42,15 @@ imports = ['ctypes',
            'tarfile',
            'readline',
            'setuptools',
-           'sqlite3',
            'itertools',
-           '_elementtree',
+#           '_elementtree',
            'pyexpat',
            'bz2',
-           'gestalt',
+           'PIL',
+           '_imaging',
            'curses',
-           'bsddb']
+ #          'bsddb'
+          ]
 
 def msg(m):
     print "-" * 79

@@ -9,4 +9,13 @@ sys/
 __minitage__part__tmp/
 *.pyc
 .installed.cfg
+.libs/libfreetype.so
+.libs/libjpeg.so
+.libs/libz.so
+Python-2.3.7.minitage/
+Python-2.3.7.readline/
+Python-2.3.7.time/
+Python-2.3.7.tk/
+Python-2.3.7/
+
 *.pyc
