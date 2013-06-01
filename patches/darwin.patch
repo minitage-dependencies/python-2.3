@@ -1,0 +1,36 @@
+diff -Nur Python-2.3.7/Mac/OSX/Makefile Python-2.3.7.b/Mac/OSX/Makefile
+--- Python-2.3.7/Mac/OSX/Makefile	2005-01-04 17:05:33.000000000 +0100
++++ Python-2.3.7.b/Mac/OSX/Makefile	2013-06-01 18:32:21.000000000 +0200
+@@ -37,7 +37,7 @@
+ INSTALL_DATA=	${INSTALL} -m ${FILEMODE}
+ LN=ln
+ STRIPFLAG=-s
+-##OPT=-g -O3 -Wall -Wstrict-prototypes -Wno-long-double -no-cpp-precomp \
++##OPT=-g -O3 -Wall -Wstrict-prototypes -no-cpp-precomp \
+ ##	-fno-common -dynamic
+ ##INCLUDES=-I$(builddir) -I$(srcdir)/Include -I$(srcdir)/Mac/Include
+ ##DEFINES=
+diff -Nur Python-2.3.7/configure Python-2.3.7.b/configure
+--- Python-2.3.7/configure	2005-01-11 14:49:02.000000000 +0100
++++ Python-2.3.7.b/configure	2013-06-01 18:32:03.000000000 +0200
+@@ -4152,7 +4152,7 @@
+ 	    ;;
+ 	# is there any other compiler on Darwin besides gcc?
+ 	Darwin*)
+-	    BASECFLAGS="$BASECFLAGS -Wno-long-double -no-cpp-precomp -mno-fused-madd"
++	    BASECFLAGS="$BASECFLAGS -no-cpp-precomp -mno-fused-madd"
+ 	    ;;
+     esac
+     ;;
+diff -Nur Python-2.3.7/configure.in Python-2.3.7.b/configure.in
+--- Python-2.3.7/configure.in	2005-01-11 14:49:02.000000000 +0100
++++ Python-2.3.7.b/configure.in	2013-06-01 18:32:13.000000000 +0200
+@@ -687,7 +687,7 @@
+ 	    ;;
+ 	# is there any other compiler on Darwin besides gcc?
+ 	Darwin*)
+-	    BASECFLAGS="$BASECFLAGS -Wno-long-double -no-cpp-precomp -mno-fused-madd"
++	    BASECFLAGS="$BASECFLAGS -no-cpp-precomp -mno-fused-madd"
+ 	    ;;
+     esac
+     ;;
